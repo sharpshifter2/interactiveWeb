@@ -1,28 +1,20 @@
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
-  color: #fff; 
-  
 }
 
 .FondoVideo {
   position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   z-index: -1;
-  overflow: hidden;
 }
 
 .FondoVideo video {
   position: absolute;
-  top: 50%;
-  left: 50%;
   width: 100%;
   height: 100%;
   object-fit: cover; 
-  transform: translate(-50%, -50%);
   
 }
 
@@ -47,7 +39,6 @@ body {
   text-decoration: none;
   color: antiquewhite;
   font-weight: 500;
-  transition: color 0.3s ease-in-out;
 }
 
 .navbar a:hover {
@@ -61,18 +52,18 @@ body {
 
 h1 {
   color:  #99ff00;
-  font-size: 3rem;
-  margin-bottom: 0.5rem;
+  font-size: 60px;
+  margin-bottom: 2px;
 }
 
 .pt {
   font-size: 20px;
+  color: #fff;
 }
 
 .mainbtn {
   font-weight: 500;
   font-size: 1rem;
-  letter-spacing: 1px;
   padding: 10px 30px;
   border-radius: 20px;
   color: black;
@@ -92,19 +83,30 @@ h1 {
 .allSections {
   padding-top: 200px;
 }
-.s1 {
+.Left {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 20px;
   text-align: left;
-  background-color: rgba(0, 0, 0, 0.856);
+  background-color: rgba(0, 0, 0, 0.646);
+  color: white;
 }
 
-.s1 h2{
+.Right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0.646);
+  color: white;
+}
+
+.Left h2{
   color: #99ff00;;
 }
-.s2 h2{
+.Right h2{
   color: #99ff00;;
 }
 
@@ -118,36 +120,38 @@ h1 {
   text-align: center;
 }
 
+.Right .text-content {
+  text-align: right; 
+}
+
 .image-content img {
   max-width: 80%; 
   height: auto; 
   border-radius: 40px;
 }
 
-.s2 {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 30px;
-  text-align: left;
-  background-color: rgba(0, 0, 0, 0.856);
-  color: white;
+.Mig2 {
+  text-align: center;
+  padding: 5% 0;
+  background-color: rgba(0, 0, 0, 0.646);
 }
 
-.s2 .image-content {
-  flex: 1; /* Takes up available space */
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 20px 10px;
   text-align: center;
 }
 
-.s2 .image-content img {
-  max-width: 80%; /* Scales image */
-  height: auto; /* Maintains aspect ratio */
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.s2 .text-content {
-  flex: 1; /* Takes up available space */
-  max-width: 60%; /* Limit text width */
-  text-align: right; /* Aligns text to the right */
+.footer p {
+  font-size: 0.9rem;
+  margin: 0;
 }
+
 
 
