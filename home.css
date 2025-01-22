@@ -13,7 +13,6 @@ body {
   height: 100%;
   z-index: -1;
   overflow: hidden;
-  
 }
 
 .FondoVideo video {
@@ -89,22 +88,66 @@ h1 {
   color: #99ff00;
 }
 
+
+.allSections {
+  padding-top: 200px;
+}
 .s1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding: 20px;
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0.856);
+}
+
+.s1 h2{
+  color: #99ff00;;
+}
+.s2 h2{
+  color: #99ff00;;
+}
+
+.text-content {
+  flex: 1; 
+  max-width: 60%; 
+}
+
+.image-content {
+  flex: 1; 
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.5); /
 }
 
-.s1 h2 {
-  font-size: 30px;
-  margin-bottom: 1rem;
-  color: rgba(237, 11, 11, 0.806);
+.image-content img {
+  max-width: 80%; 
+  height: auto; 
+  border-radius: 40px;
 }
 
-.s1 p {
-  line-height: 1.6;
-  color: #ccc;
-  font-size: 1rem;
-  max-width: 800px;
-  margin: 0 auto;
+.s2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0.856);
+  color: white;
 }
+
+.s2 .image-content {
+  flex: 1; /* Takes up available space */
+  text-align: center;
+}
+
+.s2 .image-content img {
+  max-width: 80%; /* Scales image */
+  height: auto; /* Maintains aspect ratio */
+}
+
+.s2 .text-content {
+  flex: 1; /* Takes up available space */
+  max-width: 60%; /* Limit text width */
+  text-align: right; /* Aligns text to the right */
+}
+
+
